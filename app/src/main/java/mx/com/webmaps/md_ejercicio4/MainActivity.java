@@ -9,6 +9,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     AppCompatButton raised;
+    AppCompatButton flat;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +18,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         raised= (AppCompatButton) findViewById(R.id.raised_btn);
+        flat = (AppCompatButton) findViewById(R.id.flat_btn);
 
         raised.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getBaseContext(),"Raised Button",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        flat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getBaseContext(),"Flat Button",Toast.LENGTH_SHORT).show();
             }
         });
     }

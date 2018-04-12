@@ -7,4 +7,6 @@
     <color name="colorRaisedButton">#4CAF50</color>
     <color name="colorRaisedButtonText">#FFFFFF</color>
 
+    <color name="colorFlatButton">#2196F3</color>
+
 </resources>
